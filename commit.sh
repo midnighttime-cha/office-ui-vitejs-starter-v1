@@ -1,7 +1,8 @@
-echo $1
+echo "====== Start git command ======"
 git add .
-echo "Git add all"
+echo "git add all"
 git commit -m "$1"
 echo "git commit $1"
 git push -u origin master
 echo "git push origin master"
+echo "====== End git command ======"
