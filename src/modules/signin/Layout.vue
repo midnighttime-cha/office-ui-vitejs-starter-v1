@@ -5,7 +5,7 @@
   <div class="container-fluid h-100">
 			<div class="row h-100">
 				<div class="col-12 col-md-8">
-					<img src="/images/login.gif" class="mx-5" style="margin-top: 5rem" />
+					<img src="/images/login.gif" class="img-signin" />
 				</div>
 				<div class="col-12 col-md-4 bg-light shadow pt-5 px-3 px-md-5 h-100">
 					<div class="row">
@@ -30,8 +30,22 @@
 									</label>
 								</div>
 								<button class="w-100 btn btn-lg btn-primary" type="submit">Sign in</button>
-								<p class="mt-5 mb-3 text-muted">&copy; 2022</p>
 							</form>
+						</div>
+
+						<div class="col-12 mt-5">
+							<router-link to="/rogot-password" class="text-link">
+								Forgot Password
+							</router-link>
+						</div>
+						<div class="col-12 mt-2">
+							<router-link to="/register" class="text-link">
+								Register
+							</router-link>
+						</div>
+
+						<div class="col-12 text-center">
+							<p class="mt-5 mb-3 text-muted">&copy; 2022</p>
 						</div>
 					</div>
 				</div>
@@ -91,5 +105,11 @@
 		text-align: center;
 		white-space: nowrap;
 		-webkit-overflow-scrolling: touch;
+	}
+
+	.img-signin {
+		position: absolute;
+		bottom: 2rem;
+		width: 30%;
 	}
 </style>
